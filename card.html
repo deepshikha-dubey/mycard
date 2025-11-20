@@ -1,0 +1,137 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<style>
+img{
+ width:400px;
+ height:500px;
+}
+body{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+.box{
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%, -50%);
+ width:400px;
+ height:500px;
+ background:#000;
+ overflow:hidden;
+ border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+.imgBx{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition:0.5s;
+  z-index:2;
+  background:#000;
+}
+.imgBx img{
+   transition:0.5s;
+}
+.box:hover .imgBx img{
+    opacity:0.5;
+}
+.social-icon{
+   position:absolute;
+   top:50%;
+   left:35%;
+   transform:translate(-50%,-50%);
+   z-index:3;
+   opacity:flex;
+   margin:0;
+   padding:0;
+   
+}
+.social-icon li{
+   float:left;
+   list-style:none;
+   
+}
+.social-icon li a {
+  position:relative;
+  display:block;
+  width:40px;
+  height:40px;
+  line-height:50px;
+  text-align:center;
+  background:#fff;
+  color:#262626;
+  margin:0 5px;
+  border-radius:50px;
+  transition:0.5s;
+  transform:translateY(200px);
+  opacity:0;
+}
+.box:hover .social-icon li a{
+  transform:translateY(0px);
+  opacity:1;
+}
+.box .social-icon li a .fab{ font-size:20px; line-height:50px; transition:0.5s;}
+.box social-icon li a:hover .fab{ transform:rotateY(360deg);}
+
+.box:hover .social-icon li:nth-child(1) a{
+  transition-delay:0s;
+}
+.box:hover .social-icon li:nth-child(2) a{
+  transition-delay:0.2s;
+}
+.box:hover .social-icon li:nth-child(3) a{
+  transition-delay:0.4s;
+}
+.box:hover .social-icon li:nth-child(4) a{
+  transition-delay:0.6s;
+}
+.box:hover .social-icon li:nth-child(5) a{
+  transition-delay:0.8s;
+}
+.details{
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#fff;
+  z-index:4;
+  width:100%;
+
+  box-sizing:border-box;
+  padding:10px;
+}
+.details h2{
+  margin:10px 0 0;
+  padding:0;
+  text-align:center;
+}
+.details h2 span{
+    
+}
+</style>
+
+</head>
+<body>
+  <div class="box">
+      <div class="imgBx">
+	    <img src="img/mine.jpg">
+	  </div>
+	  <ul class="social-icon">
+	    <li><a href="https://facebook.com/profile.php?id=100016918086198"><i class="fab fa-facebook-f" area-hidden="true"></i></a></li>
+		<li><a href="https://github.com/deepshikha-dubey"><i class="fab fa-github" area-hidden="true"></i></a></li>
+		<li><a href=""><i class="fab fa-google-plus-g" area-hidden="true"></i></a></li>
+		<li><a href="https://linkedin.com/in/deepshikha-dubey-146097358"><i class="fab fa-linkedin-in" area-hidden="true"></i></a></li>
+		<li><a href="https://www.youtube.com/channel/UCvOd0rhNBOxufsro0F5NC-w"><i class="fab fa-youtube" area-hidden="true"></i></a></li>
+	  </ul>
+	  <div class="details">
+	   <h2>Deepshikha Dubey <br><span>DevOps Engineer </span></h2>
+	  </div>
+  </div>
+</body>
+</html>
